@@ -9,7 +9,7 @@ from fastapi.responses import HTMLResponse
 from pinecone import Pinecone
 from pydantic import BaseModel, Field
 
-# FastAPIの初期化
+# FastAPI初期化
 app = FastAPI(
     title="Pinecone Vector Search API",
     description="Vector similarity search using Pinecone",
