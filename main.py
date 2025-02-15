@@ -1,11 +1,12 @@
 import os
+from typing import Any, Dict, List
+
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
 from fastapi.openapi.docs import get_swagger_ui_html
-from dotenv import load_dotenv
+from fastapi.responses import HTMLResponse
 from pinecone import Pinecone
-from typing import List, Dict, Any
 from pydantic import BaseModel, Field
 
 # FastAPIの初期化
